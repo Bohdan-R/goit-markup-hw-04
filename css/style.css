@@ -48,8 +48,6 @@ h6 {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    outline: 1px solid rgb(255, 81, 0);
 }
 
 .section {
@@ -158,19 +156,20 @@ h6 {
 }
 
 .contact-icon {
+    fill: var(--primary-text-color);
     margin-right: 10px;
 }
 
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
-    --color4: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /*ГЛАВНЫЙ КОНТЕНТ САЙТА-----------------*/
 
 /*Герой---------------------------------*/
 .hero {
-    background-color: #2F303A;
+    background-color: #C4C4C4;
 }
 
 .container-hero {
@@ -181,7 +180,7 @@ h6 {
     margin-left: auto;
     padding: 200px 452px;
 
-    background-color: #2F303A;
+    background-color: #C4C4C4;
     background-image: url(../images/hero/hero.jpg);
 }
 
@@ -453,9 +452,13 @@ h6 {
     border-color: var(--accent-color);
 }
 
+.client-icon {
+    fill: var(--social-icon-color);
+}
+
 .client-item:hover .client-icon,
-.client-item:focus .client-icon{
-    --color3: var(--accent-color);
+.client-item:focus .client-icon {
+    fill: var(--accent-color);
 }
 
 /*ПОДВАЛ САЙТА---------------------------*/
@@ -510,6 +513,10 @@ footer {
 }
 
 /*Наши Соц.Сети---------------*/
+
+.logo.footer {
+    color: #FFFFFF;
+}
 .social {
     display: block;
     margin-bottom: 20px;
@@ -540,7 +547,7 @@ footer {
     align-items: center;
     width: 100%;
     height: 100%;
-    
+
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
@@ -551,6 +558,9 @@ footer {
 }
 
 .social-icon {
+    width: 20px;
+    height: 20px;
+
     fill: #FFFFFF;
 }
 
@@ -624,7 +634,6 @@ footer {
     margin-bottom: 30px;
 
     background-color: var(--background-color-card);
-    border: 1px solid #EEEEEE;
 }
 
 .job-card:nth-child(3n) {
@@ -635,8 +644,13 @@ footer {
     margin-bottom: 0;
 }
 
+.job-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .job-link>img {
     display: block;
+    width: 100%;
 }
 
 .card-content {
@@ -644,6 +658,10 @@ footer {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .job-title {
